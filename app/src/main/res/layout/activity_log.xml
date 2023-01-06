@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogAL">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:background="@drawable/view_stroke_bottom" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="제품명"
+            android:textColor="#353535"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:background="@drawable/view_stroke_bottom" />
+
+        <TextView
+            android:id="@+id/comparison_My_AL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="나에게 해당하는 알레르기 성분\n"
+            android:textColor="#BA0000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:background="@drawable/view_stroke_bottom"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/else_AL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="그 외 포함된 알레르기 성분\n"
+            android:textColor="#353535"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:background="@drawable/view_stroke_bottom"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
